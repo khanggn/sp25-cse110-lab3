@@ -89,7 +89,7 @@
 <!--textarea-->
 <section id="QCC">
     <h2>Questions, Comments or Concerns</h2>
-    <form action="">
+    <form action="/action_page.php">
         <p><label for="meeting">Please type any <strong>question, comments, or concerns</strong> you may have:</label></p>
         <textarea id="meeting" name="meeting" rows="4" cols="50"></textarea>
         <br>
@@ -118,22 +118,21 @@
       </audio>
 </section>
 </body>
-<br>
 <hr>
 <footer>
     <br>
     <form action="/action_page.php">
         <fieldset>
             <legend>Meeting Feedback:</legend>
-            <label for="fname">First name:</label>
+            <label for="firstname">First name:</label>
             <input type="text">
             <br>
             <br>
-            <label for="fname">Last name:</label>
+            <label for="lastname">Last name:</label>
             <input type="text">
             <br>
             <br>
-            <label for="fname">Meeting Date:</label>
+            <label for="meetingdate">Meeting Date:</label>
             <input type="date">
 
             <p>On a scale of 1-3, how useful was the meeting?</p>
@@ -152,9 +151,9 @@
             <input type="checkbox" id="VerySat">
             <label for="VerySat"> Very Satisfied</label><br>
             <br>
-            <label for="names">Choose someone who you vibed with this meeting:</label>
-            <input list="names" name="name" id="name">
-            <datalist id="names">
+            <label for="membernames">Choose someone who you vibed with this meeting:</label>
+            <input list="membernames" name="name" id="name">
+            <datalist id="membernames">
               <option value="Khang">
               <option value="Me">
               <option value="khang">
