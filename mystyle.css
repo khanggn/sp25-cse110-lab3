@@ -194,3 +194,73 @@ summary, details p {
     width: 50%;
     height: 50%;
 }
+
+/* Unfinished + New Business */
+
+#BusinessItems {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px auto 60px auto; 
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    max-width: 1000px;
+    border-radius: 12px;
+}
+
+.business {
+    width: 45%;
+    min-width: 300px;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px dashed #ccc;
+    border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    padding-left: 10px;
+}
+
+.business ol li {
+    margin-bottom: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.business label input[type="checkbox"]:checked + span,
+.business label input[type="checkbox"]:checked {
+    accent-color: #85d1e0;
+}
+
+.unfinished li {
+    background-color: #ffecec;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.unfinished li:has(input[type="checkbox"]:checked) {
+    background-color: #d4edda; 
+}
+
+.business~.business {
+    border-left: 3px dashed #ccc;
+}
+
+.business {
+    ol {
+        padding-left: 20px;
+    }
+
+    li {
+        list-style-type: decimal;
+    }
+
+    input[type="checkbox"] {
+        margin-right: 10px;
+        transform: scale(1.2);
+    }
+}
