@@ -22,7 +22,6 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-optical-sizing: auto;
     font-variation-settings: "wdth" 100;
   }
 
@@ -75,17 +74,17 @@ p {
     gap: 20px; 
     padding: 7.5pt;
     border: solid;
-    border-color: color-mix(in srgb, #333333 60%, #2e3b4e 40%);
+    border-color: rgba(51, 51, 51, 0.6); 
     border-width: 3px;
     border-radius: 0.625pc;
-    background-color: color(display-p3 0.878 0.984 0.886);
+    background-color: rgb(224, 251, 226);
     justify-content: center;
     list-style-type: none; 
     margin-bottom: 20px;
     margin: 0 30px;
 }
 .member-list .absent {
-    background-color: color-mix(in srgb, lightcoral 80%, white 20%);
+    background-color: rgba(240, 128, 128, 0.8);  /* Light coral with opacity */
 }
 
 .member-list ul li {
@@ -260,19 +259,17 @@ summary, details p {
     border-left: 3px dashed #ccc;
 }
 
-.business {
-    ol {
-        padding-left: 20px;
-    }
+.business ol {
+    padding-left: 20px;
+}
 
-    li {
-        list-style-type: decimal;
-    }
+.business li {
+    list-style-type: decimal;
+}
 
-    input[type="checkbox"] {
-        margin-right: 10px;
-        transform: scale(1.2);
-    }
+.business input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
 }
 
 /* Question comment or concerns section */
@@ -501,7 +498,7 @@ button:hover {
 .radio-group {
     display: flex;
     gap: 20px;
-    align-items: left;
+    align-items: flex-start;
 }
 
 .radio-group label {
