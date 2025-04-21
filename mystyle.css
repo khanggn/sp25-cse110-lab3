@@ -264,3 +264,68 @@ summary, details p {
         transform: scale(1.2);
     }
 }
+
+/* Question comment or concerns section */
+
+#QCC {
+    background-color: #fdf6fd;
+    border: 2px dashed #e8a4c4;
+    border-radius: 12px;
+    padding: 20px 30px;
+    margin: 30px auto;
+    max-width: 600px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+
+}
+
+#QCC label {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#QCC textarea {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    display: block;
+    resize: vertical;
+}
+
+#QCC textarea:focus {
+    border-color: #f39ac0;
+    outline: none;
+}
+
+#QCC input[type="submit"] {
+    margin-top: 10px;
+    background-color: #f7c1dc;
+    border: 2px solid #e39bbf;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.submit-container {
+    text-align: center;
+}
+
+#QCC input[type="submit"]:hover {
+    background-color: #f39ac0;
+    transform: scale(1.03);
+}
+
+#QCC input[type="submit"]:active {
+    background-color: #e07eaa;
+    transform: scale(0.98);
+}
