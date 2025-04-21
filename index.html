@@ -148,34 +148,36 @@
     <form action="/action_page.php">
         <fieldset>
             <label for="firstname">First name:</label>
-            <input type="text" id="firstname">
-            <br><br>
-            
-            <label for="lastname">Last name:</label>
-            <input type="text" id="lastname">
-            <br><br>
-            
-            <label for="meetingdate">Meeting Date:</label>
-            <input type="date" id="meetingdate">
+            <input type="text" id="firstname" name="firstname">
 
-            <p>On a scale of 1-3, how useful was the meeting?</p>
-              <input type="radio" id="1">
-              <label for="1">1</label><br>
-              <input type="radio" id="2">
-              <label for="2">2</label><br>
-              <input type="radio" id="3">
-              <label for="3">3</label>
-             <br>
+            <label for="lastname">Last name:</label>
+            <input type="text" id="lastname" name="lastname">
+
+            <label for="meetingdate">Meeting Date:</label>
+            <input type="date" id="meetingdate" name="meetingdate">
+
+            <p>On a scale of 1–3, how useful was the meeting?</p>
+            <div class="radio-group">
+              <input type="radio" id="scale1" name="usefulness" value="1">
+              <label for="scale1">1</label>
+              <input type="radio" id="scale2" name="usefulness" value="2">
+              <label for="scale2">2</label>
+              <input type="radio" id="scale3" name="usefulness" value="3">
+              <label for="scale3">3</label>
+            </div>
+
             <p>How satisfied are you with the meeting?</p>
-            <input type="checkbox" id="NotSat">
-            <label for="NotSat"> Not Satisfied</label><br>
-            <input type="checkbox" id="Neutral">
-            <label for="Neutral"> Neutral</label><br>
-            <input type="checkbox" id="VerySat">
-            <label for="VerySat"> Very Satisfied</label><br>
-            <br>
+            <div class="checkbox-group">
+                <input type="checkbox" id="NotSat">
+                <label for="NotSat"> Not Satisfied</label>
+                <input type="checkbox" id="Neutral">
+                <label for="Neutral"> Neutral</label>
+                <input type="checkbox" id="VerySat">
+                <label for="VerySat"> Very Satisfied</label>
+            </div>
+
             <label for="memberinput">Choose someone who you vibed with this meeting:</label>
-            <input list="membernames" name="name" id="memberinput">
+            <input list="membernames" name="vibe" id="memberinput">
             <datalist id="membernames">
                 <option value="Khang">
                 <option value="Me">
@@ -183,21 +185,16 @@
                 <option value="khangggg">
                 <option value="khangggggggg">
             </datalist>
-            <br>
-            <br>
 
-            <label for="morenames">Choose a memeber you would like to talk to before next meeting:</label>
+            <label for="morenames">Choose a member you'd like to talk to before next meeting:</label>
             <select name="morenames" id="morenames">
-              <option value="1">Member 1</option>
-              <option value="2">Member 2</option>
-              <option value="3">Member 3</option>
-              <option value="4">Member 4</option>
+                <option value="1">Member 1</option>
+                <option value="2">Member 2</option>
+                <option value="3">Member 3</option>
+                <option value="4">Member 4</option>
             </select>
-            <br>
 
-            <br>
-            <button type="button">Submit</button>
-
+            <button type="submit">Submit</button>
         </fieldset>
     </form>
 </footer>
