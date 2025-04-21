@@ -7,6 +7,13 @@
 body{
     background-color: var(--bg-color, #ffffff);
 }
+
+hr {
+    border: none;
+    height: 4px;
+    background-color: #000000; 
+}
+
 /*Font*/
 p {
     font-family: 'Open Sans', sans-serif;
@@ -328,4 +335,49 @@ summary, details p {
 #QCC input[type="submit"]:active {
     background-color: #e07eaa;
     transform: scale(0.98);
+}
+
+/* Pictures and Diagrams */
+
+#Pictures {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffcce5;
+    text-shadow: 
+        -1px -1px 0 black,
+         2px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#PicturesSection {
+    background-color: #fef6fb;
+    border: 2px dashed #f4b3d3;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 90%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+#PicturesSection img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    margin: 10px 15px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+}
+
+
+#PicturesSection img:hover {
+    transform: scale(1.03);
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
 }
