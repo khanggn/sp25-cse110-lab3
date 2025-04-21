@@ -272,6 +272,15 @@ summary, details p {
     transform: scale(1.2);
 }
 
+/*use of nested selector*/
+    #unfinished-section,
+    #new-section {
+    h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    }
+
 /* Question comment or concerns section */
 
 #QCC {
