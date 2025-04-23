@@ -2,7 +2,7 @@
 
 /*Example of fallback variable*/
 :root {
-    --bg-color: #cae9f6;
+    --bg-color: color(srgb 0.792 0.913 0.965); ;
 }
 body{
     background-color: var(--bg-color, #ffffff);
@@ -197,11 +197,12 @@ summary, details p {
 #MeetingAgenda {
     padding: 20px;
     background-color: #def4fc;
-    border: 2px dashed #98cde3;
+    border: 2px #98cde3;
     border-radius: 15px;
     margin: 30px auto;
     width: 50%;
     height: 50%;
+    border-style: dashed;
 }
 
 /* Unfinished + New Business */
@@ -450,7 +451,7 @@ footer {
 
 form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: auto;
     background-color: #ffe6f0;
     padding: 30px;
     border-radius: 15px;
